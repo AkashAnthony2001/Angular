@@ -1,0 +1,27 @@
+<form>
+<label >Email: </label>
+<input  type="text" [formControl]="email">
+
+<label >Password: </label>
+<input type="password" [formControl]="pass">
+
+<button (click)="show()">Click Here</button>
+
+<p class="red">
+  {{email.status}}
+  {{email.errors | json }}
+  {{email.value}}
+
+
+</p>
+
+</form>
+<form  [formGroup]="signupForm" (ngSubmit)="submit()">
+  <div class="form-group">
+    Email:
+    <input type="text" formControlName="email">
+    Password:
+    <input type="password" formControlName="pass">
+    <button type="submit" >Click Here</button>
+  </div>
+</form>

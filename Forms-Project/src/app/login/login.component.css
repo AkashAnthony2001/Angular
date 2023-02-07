@@ -1,0 +1,57 @@
+a{
+    color:black;
+}
+.container{
+    width:calc(100% - 40px);
+    padding:20px;
+    
+}
+.content{
+    width:calc(40% - 60px);
+    padding:30px;
+    border:2px solid black;
+    margin:auto;
+    background-color:grey;
+    
+}
+.text{
+    width:100%;
+}
+.form-data{
+    width:calc(100% - 45px);
+    padding:20px;
+    margin:5px 0px;
+}
+.pass{
+    display:flex;
+    width:100%;
+}
+.box{
+    width:50%;
+    padding:20px 0px
+}
+.for-pass{
+    text-align:right;
+}
+.login{
+    width:100%;
+}
+.btn{
+    width:100%;
+    padding:20px 0px;
+    cursor:pointer;
+}
+.no-acct{
+    width:calc(100% - 40px);
+    padding:20px;
+    text-align:center;
+}
+.acct-btn{
+    width:100%;
+}
+.heading{
+    font-weight:bolder;
+    font-size:30px;
+    text-align:center;
+    padding:0px 10px 10px 10px;
+}

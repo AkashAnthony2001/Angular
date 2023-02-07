@@ -1,0 +1,83 @@
+<div class="container">
+    <div class="content">
+        <form action="" class="form-controls">
+            <div class="col-6">
+                <input type="text" placeholder="FIRSTNAME" class="form-data">
+                <input type="text" placeholder="LASTNAME" class="form-data">
+            </div>
+            <div class="email control">
+                <input type="text" placeholder="E-MAIL" class="form-data">
+            </div>
+            <div class="password control">
+                <input type="text" placeholder="PASSWORD" class="form-data">
+                <input type="text" placeholder="CONFIRM PASSWORD" class="form-data">
+            </div>
+            <div class="place control">
+                <select name="places" id="place" class="state">
+                    <option value="#">Select State:</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value="Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value="Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value="Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value="Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                </select>
+            </div>
+            <div class="gender control">
+                <input type="radio" > Male
+                <br>
+                <input type="radio"> Female
+                <br>
+                <input type="radio"> Others
+            </div>
+            <div class="phone control" >
+                <input type="text" placeholder="PHONE" class="form-data">
+            </div>
+            <div class="agree control">
+                <input type="checkbox" name="" id=""> I agree to the terms and conditions and privacy policy.
+            </div>
+            <div class="button control">
+                <button class="form-data">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+.container{
+    width:calc(100% - 40px);
+    padding:20px;
+}
+.content{
+    width:calc(50% - 64px);
+    padding:30px;
+    border:2px solid black;
+    margin:auto;
+    background-color:grey;
+}

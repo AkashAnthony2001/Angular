@@ -1,0 +1,14 @@
+<app-child>
+  <h1 class="h1">Hi I am render from projected by ng-content</h1>
+  <h2 class="h2">Hi I Am Message Two</h2>
+
+  <ul *ngFor="let prod of users">
+    <li>{{prod.id}}</li>
+    <li>{{prod.name}}</li>
+    <li>{{prod.description}}</li>
+  </ul>
+
+  <ul *ngFor="let list of user">
+    <li>{{list.name }}</li>
+  </ul>
+</app-child>

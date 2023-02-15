@@ -1,5 +1,6 @@
 import { Component , OnInit} from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ export class AppComponent implements OnInit{
   email = new FormControl('',[Validators.required,Validators.minLength(5),Validators.maxLength(12)]);
   pass = new FormControl();
 
-  constructor(){
+  constructor( private route:Router){
     // this.email.valueChanges.subscribe(data => {console.log(data);});
     this.email.statusChanges.subscribe(data => {console.log(data);});
   }
@@ -23,6 +24,7 @@ export class AppComponent implements OnInit{
 
 
 
+warning:string=""
   signupForm!: FormGroup;
 
   ngOnInit(){
@@ -33,6 +35,12 @@ export class AppComponent implements OnInit{
   }
 
   submit(){
-    console.log(this.email,this.pass);
+    if(this.email.value == "Kavi" && this.pass.value == "kavi"){
+      this.route.navigateByUrl("/forms")
+    }
+    else{
+      let msg="Worng Cred !"
+      this.warning=msg
+    }
   }
 }

@@ -15,12 +15,12 @@
 </p>
 
 </form>
-<form  [formGroup]="signupForm" (ngSubmit)="submit()">
+<form  [formGroup]="signupForm" >
   <div class="form-group">
     Email:
     <input type="text" formControlName="email">
     Password:
     <input type="password" formControlName="pass">
-    <button type="submit" >Click Here</button>
+    <button type="submit" (click)="submit()">Click Here</button>
   </div>
 </form>
